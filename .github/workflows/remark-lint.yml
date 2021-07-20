@@ -8,19 +8,20 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Setup Node
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2.2.0
       with:
-        node-version: '13.x'
-    - run: npm install
-    - run: npm run lint
+        node-version: '16.x'
+        cache: 'yarn'
+    - run: yarn
+    - run: yarn lint
     - name: Check diff
       run: git diff --exit-code ${{ github.sha }}
     - name: Create Pull Request
       if: failure()
-      uses: peter-evans/create-pull-request@v3.4.1
+      uses: peter-evans/create-pull-request@v3.10.0
       with:
-        commit-message: "style: Format Markdown files"
-        title: "Format Markdown files for ${{ github.ref }}"
+        commit-message: "style: format Markdown files"
+        title: "style: format Markdown files for ${{ github.ref }}"
         labels: "style"
         assignees: "${{ github.actor }}"
         reviewers: "${{ github.actor }}"

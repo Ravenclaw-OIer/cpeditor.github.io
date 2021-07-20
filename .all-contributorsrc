@@ -99,7 +99,8 @@
       "avatar_url": "https://avatars0.githubusercontent.com/u/32099652?v=4",
       "profile": "https://github.com/IZOBRETATEL777",
       "contributions": [
-        "content"
+        "content",
+        "review"
       ]
     },
     {
@@ -126,7 +127,27 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/40647091?v=4",
       "profile": "https://qyh1206.cn/",
       "contributions": [
-        "translation"
+        "translation",
+        "bug"
+      ]
+    },
+    {
+      "login": "Sadykhzadeh",
+      "name": "Azer Sadykhzadeh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51178055?v=4",
+      "profile": "http://sadykhzadeh.ml/",
+      "contributions": [
+        "review"
+      ]
+    },
+    {
+      "login": "jackhallam",
+      "name": "Jack Hallam",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5289178?v=4",
+      "profile": "https://jackhallam.com",
+      "contributions": [
+        "bug",
+        "content"
       ]
     }
   ],
